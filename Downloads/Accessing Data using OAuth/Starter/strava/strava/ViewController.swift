@@ -84,6 +84,14 @@ class ViewController: UIViewController {
        
     }
     
+    private func callActivity (notification: Notification){
+        
+    }
+    
+    private func authenticateStrava(){
+        self.oauthswift = OAuth2
+    }
+    
 }
 
 // TableViewController

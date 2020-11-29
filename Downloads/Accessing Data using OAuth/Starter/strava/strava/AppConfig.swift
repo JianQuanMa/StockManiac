@@ -30,12 +30,12 @@ class AppConfig
 {
     static let appversion:String = "1.00022"
     static let API:String = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
-    static let consumerKey:String = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
-    static let consumerSecret:String = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    static let consumerKey:String = "21756"
+    static let consumerSecret:String = "64e3600c4842c5120e373f790f486667d6e8f0ce"
     static let authorizeURL:String = "https://www.strava.com/oauth/authorize"
     static let accessTokenUrl:String = "https://www.strava.com/oauth/token"
     static let responseType:String = "code"
-    static let callBackURL:String = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    static let callBackURL:String = "com.razeware.starva://127.0.0.1"
     static let scope:String = "view_private,write"
     static let state:String = "123"
 }
