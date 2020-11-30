@@ -89,7 +89,15 @@ class ViewController: UIViewController {
     }
     
     private func authenticateStrava(){
-        self.oauthswift = OAuth2
+        self.oauthswift = OAuth2Swift(consumerKey: AppConfig.consumerKey, consumerSecret: AppConfig.consumerSecret, authorizeUrl: AppConfig.authorizeURL, accessTokenUrl: AppConfig.accessTokenUrl, responseType: AppConfig.responseType)
+        
+        self.oauthswift?.authorizeURLHandler = WebViewController()
+        
+        self.oauthswift?.authorize(withCallbackURL: URL(string: AppConfig.callBackURL)!, scope: AppConfig.scope, state: AppConfig.state, success: { credential, response,  parameter in
+            print("success")
+        }, failure: { err in
+            print("\(err.localizedDescription)")
+        })
     }
     
 }
